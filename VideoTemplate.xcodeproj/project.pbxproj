@@ -8,14 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		FA30B11A29BD005C00EAC191 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA30B11929BD005C00EAC191 /* AppDelegate.swift */; };
-		FA30B11C29BD005C00EAC191 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA30B11B29BD005C00EAC191 /* SceneDelegate.swift */; };
-		FA30B11E29BD005C00EAC191 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA30B11D29BD005C00EAC191 /* ViewController.swift */; };
-		FA30B12129BD005C00EAC191 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA30B11F29BD005C00EAC191 /* Main.storyboard */; };
+		FA30B11E29BD005C00EAC191 /* TemplateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA30B11D29BD005C00EAC191 /* TemplateViewController.swift */; };
 		FA30B12329BD005D00EAC191 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA30B12229BD005D00EAC191 /* Assets.xcassets */; };
 		FA30B12629BD005D00EAC191 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA30B12429BD005D00EAC191 /* LaunchScreen.storyboard */; };
 		FA30B13129BD005D00EAC191 /* VideoTemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA30B13029BD005D00EAC191 /* VideoTemplateTests.swift */; };
-		FA30B13B29BD005D00EAC191 /* VideoTemplateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA30B13A29BD005D00EAC191 /* VideoTemplateUITests.swift */; };
-		FA30B13D29BD005D00EAC191 /* VideoTemplateUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA30B13C29BD005D00EAC191 /* VideoTemplateUITestsLaunchTests.swift */; };
+		FA30B14D29BD010A00EAC191 /* ViewRender.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA30B14C29BD010A00EAC191 /* ViewRender.swift */; };
+		FA30B15029BD011B00EAC191 /* ModelFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA30B14F29BD011B00EAC191 /* ModelFrame.swift */; };
+		FA30B15329BD016700EAC191 /* TemplatePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA30B15229BD016700EAC191 /* TemplatePresenter.swift */; };
+		FA30B15629BD018B00EAC191 /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA30B15529BD018B00EAC191 /* ServiceAssembly.swift */; };
+		FA30B15829BD019F00EAC191 /* ServiceMakeVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA30B15729BD019F00EAC191 /* ServiceMakeVideo.swift */; };
+		FA30B15A29BD020100EAC191 /* ServiceImageSegmentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA30B15929BD020100EAC191 /* ServiceImageSegmentation.swift */; };
+		FA30B16329BD024F00EAC191 /* ImageEffects.metal in Sources */ = {isa = PBXBuildFile; fileRef = FA30B15C29BD024D00EAC191 /* ImageEffects.metal */; };
+		FA30B16429BD024F00EAC191 /* music.aac in Resources */ = {isa = PBXBuildFile; fileRef = FA30B15D29BD024D00EAC191 /* music.aac */; };
+		FA30B16529BD024F00EAC191 /* ImageProcessing.metal in Sources */ = {isa = PBXBuildFile; fileRef = FA30B15F29BD024D00EAC191 /* ImageProcessing.metal */; };
+		FA30B16629BD024F00EAC191 /* ImageScale.metal in Sources */ = {isa = PBXBuildFile; fileRef = FA30B16029BD024E00EAC191 /* ImageScale.metal */; };
+		FA30B16729BD024F00EAC191 /* ImageBlend.metal in Sources */ = {isa = PBXBuildFile; fileRef = FA30B16129BD024E00EAC191 /* ImageBlend.metal */; };
+		FA30B16829BD024F00EAC191 /* segmentation_8bit.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = FA30B16229BD024F00EAC191 /* segmentation_8bit.mlpackage */; };
+		FA30B16B29BD028D00EAC191 /* ServiceSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA30B16A29BD028D00EAC191 /* ServiceSound.swift */; };
+		FA30B16F29BD031400EAC191 /* MetalRenderDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA30B16E29BD031400EAC191 /* MetalRenderDevice.swift */; };
+		FA30B17129BD032400EAC191 /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA30B17029BD032400EAC191 /* Vertex.swift */; };
+		FA30B17329BD032C00EAC191 /* Texture.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA30B17229BD032C00EAC191 /* Texture.swift */; };
+		FA30B17529BD033D00EAC191 /* TextureGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA30B17429BD033D00EAC191 /* TextureGenerator.swift */; };
+		FA30B17729BD035100EAC191 /* Image+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA30B17629BD035100EAC191 /* Image+.swift */; };
+		FA30B17929BD035E00EAC191 /* Collection+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA30B17829BD035E00EAC191 /* Collection+.swift */; };
+		FA30B17C29BD03D600EAC191 /* TemplateConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA30B17B29BD03D600EAC191 /* TemplateConfigurator.swift */; };
+		FA30B17F29BD049100EAC191 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FA30B17E29BD049100EAC191 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,17 +55,34 @@
 /* Begin PBXFileReference section */
 		FA30B11629BD005C00EAC191 /* VideoTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA30B11929BD005C00EAC191 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FA30B11B29BD005C00EAC191 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FA30B11D29BD005C00EAC191 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FA30B12029BD005C00EAC191 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA30B11D29BD005C00EAC191 /* TemplateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateViewController.swift; sourceTree = "<group>"; };
 		FA30B12229BD005D00EAC191 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA30B12529BD005D00EAC191 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA30B12729BD005D00EAC191 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA30B12C29BD005D00EAC191 /* VideoTemplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoTemplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA30B13029BD005D00EAC191 /* VideoTemplateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTemplateTests.swift; sourceTree = "<group>"; };
 		FA30B13629BD005D00EAC191 /* VideoTemplateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoTemplateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA30B13A29BD005D00EAC191 /* VideoTemplateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTemplateUITests.swift; sourceTree = "<group>"; };
-		FA30B13C29BD005D00EAC191 /* VideoTemplateUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTemplateUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FA30B14C29BD010A00EAC191 /* ViewRender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRender.swift; sourceTree = "<group>"; };
+		FA30B14F29BD011B00EAC191 /* ModelFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelFrame.swift; sourceTree = "<group>"; };
+		FA30B15229BD016700EAC191 /* TemplatePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplatePresenter.swift; sourceTree = "<group>"; };
+		FA30B15529BD018B00EAC191 /* ServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
+		FA30B15729BD019F00EAC191 /* ServiceMakeVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceMakeVideo.swift; sourceTree = "<group>"; };
+		FA30B15929BD020100EAC191 /* ServiceImageSegmentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceImageSegmentation.swift; sourceTree = "<group>"; };
+		FA30B15C29BD024D00EAC191 /* ImageEffects.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = ImageEffects.metal; sourceTree = "<group>"; };
+		FA30B15D29BD024D00EAC191 /* music.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = music.aac; sourceTree = "<group>"; };
+		FA30B15E29BD024D00EAC191 /* ImageConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageConnect.h; sourceTree = "<group>"; };
+		FA30B15F29BD024D00EAC191 /* ImageProcessing.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = ImageProcessing.metal; sourceTree = "<group>"; };
+		FA30B16029BD024E00EAC191 /* ImageScale.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = ImageScale.metal; sourceTree = "<group>"; };
+		FA30B16129BD024E00EAC191 /* ImageBlend.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = ImageBlend.metal; sourceTree = "<group>"; };
+		FA30B16229BD024F00EAC191 /* segmentation_8bit.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = segmentation_8bit.mlpackage; sourceTree = "<group>"; };
+		FA30B16A29BD028D00EAC191 /* ServiceSound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceSound.swift; sourceTree = "<group>"; };
+		FA30B16E29BD031400EAC191 /* MetalRenderDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalRenderDevice.swift; sourceTree = "<group>"; };
+		FA30B17029BD032400EAC191 /* Vertex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
+		FA30B17229BD032C00EAC191 /* Texture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Texture.swift; sourceTree = "<group>"; };
+		FA30B17429BD033D00EAC191 /* TextureGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextureGenerator.swift; sourceTree = "<group>"; };
+		FA30B17629BD035100EAC191 /* Image+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+.swift"; sourceTree = "<group>"; };
+		FA30B17829BD035E00EAC191 /* Collection+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+.swift"; sourceTree = "<group>"; };
+		FA30B17B29BD03D600EAC191 /* TemplateConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateConfigurator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA30B17F29BD049100EAC191 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,7 +116,6 @@
 			children = (
 				FA30B11829BD005C00EAC191 /* VideoTemplate */,
 				FA30B12F29BD005D00EAC191 /* VideoTemplateTests */,
-				FA30B13929BD005D00EAC191 /* VideoTemplateUITests */,
 				FA30B11729BD005C00EAC191 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,13 +133,9 @@
 		FA30B11829BD005C00EAC191 /* VideoTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				FA30B11929BD005C00EAC191 /* AppDelegate.swift */,
-				FA30B11B29BD005C00EAC191 /* SceneDelegate.swift */,
-				FA30B11D29BD005C00EAC191 /* ViewController.swift */,
-				FA30B11F29BD005C00EAC191 /* Main.storyboard */,
-				FA30B12229BD005D00EAC191 /* Assets.xcassets */,
-				FA30B12429BD005D00EAC191 /* LaunchScreen.storyboard */,
-				FA30B12729BD005D00EAC191 /* Info.plist */,
+				FA30B16C29BD02E900EAC191 /* Common */,
+				FA30B14A29BD00F100EAC191 /* Module */,
+				FA30B14929BD009600EAC191 /* Supporting */,
 			);
 			path = VideoTemplate;
 			sourceTree = "<group>";
@@ -118,13 +148,115 @@
 			path = VideoTemplateTests;
 			sourceTree = "<group>";
 		};
-		FA30B13929BD005D00EAC191 /* VideoTemplateUITests */ = {
+		FA30B14929BD009600EAC191 /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
-				FA30B13A29BD005D00EAC191 /* VideoTemplateUITests.swift */,
-				FA30B13C29BD005D00EAC191 /* VideoTemplateUITestsLaunchTests.swift */,
+				FA30B11929BD005C00EAC191 /* AppDelegate.swift */,
+				FA30B12229BD005D00EAC191 /* Assets.xcassets */,
+				FA30B12429BD005D00EAC191 /* LaunchScreen.storyboard */,
+				FA30B12729BD005D00EAC191 /* Info.plist */,
 			);
-			path = VideoTemplateUITests;
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		FA30B14A29BD00F100EAC191 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				FA30B17A29BD03C700EAC191 /* Configurator */,
+				FA30B15129BD015000EAC191 /* Presenter */,
+				FA30B14E29BD011300EAC191 /* Model */,
+				FA30B14B29BD010100EAC191 /* View */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		FA30B14B29BD010100EAC191 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA30B14C29BD010A00EAC191 /* ViewRender.swift */,
+				FA30B11D29BD005C00EAC191 /* TemplateViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA30B14E29BD011300EAC191 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA30B14F29BD011B00EAC191 /* ModelFrame.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA30B15129BD015000EAC191 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FA30B15229BD016700EAC191 /* TemplatePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		FA30B15429BD017C00EAC191 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				FA30B15529BD018B00EAC191 /* ServiceAssembly.swift */,
+				FA30B15729BD019F00EAC191 /* ServiceMakeVideo.swift */,
+				FA30B15929BD020100EAC191 /* ServiceImageSegmentation.swift */,
+				FA30B16A29BD028D00EAC191 /* ServiceSound.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		FA30B15B29BD021600EAC191 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA30B15E29BD024D00EAC191 /* ImageConnect.h */,
+				FA30B16129BD024E00EAC191 /* ImageBlend.metal */,
+				FA30B15C29BD024D00EAC191 /* ImageEffects.metal */,
+				FA30B15F29BD024D00EAC191 /* ImageProcessing.metal */,
+				FA30B16029BD024E00EAC191 /* ImageScale.metal */,
+				FA30B15D29BD024D00EAC191 /* music.aac */,
+				FA30B16229BD024F00EAC191 /* segmentation_8bit.mlpackage */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		FA30B16929BD027600EAC191 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FA30B17629BD035100EAC191 /* Image+.swift */,
+				FA30B17829BD035E00EAC191 /* Collection+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		FA30B16C29BD02E900EAC191 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FA30B15B29BD021600EAC191 /* Files */,
+				FA30B16D29BD02F200EAC191 /* Render */,
+				FA30B16929BD027600EAC191 /* Extension */,
+				FA30B15429BD017C00EAC191 /* Service */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		FA30B16D29BD02F200EAC191 /* Render */ = {
+			isa = PBXGroup;
+			children = (
+				FA30B16E29BD031400EAC191 /* MetalRenderDevice.swift */,
+				FA30B17029BD032400EAC191 /* Vertex.swift */,
+				FA30B17229BD032C00EAC191 /* Texture.swift */,
+				FA30B17429BD033D00EAC191 /* TextureGenerator.swift */,
+			);
+			path = Render;
+			sourceTree = "<group>";
+		};
+		FA30B17A29BD03C700EAC191 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				FA30B17B29BD03D600EAC191 /* TemplateConfigurator.swift */,
+			);
+			path = Configurator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +275,9 @@
 			dependencies = (
 			);
 			name = VideoTemplate;
+			packageProductDependencies = (
+				FA30B17E29BD049100EAC191 /* SnapKit */,
+			);
 			productName = VideoTemplate;
 			productReference = FA30B11629BD005C00EAC191 /* VideoTemplate.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +350,9 @@
 				Base,
 			);
 			mainGroup = FA30B10D29BD005C00EAC191;
+			packageReferences = (
+				FA30B17D29BD049100EAC191 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = FA30B11729BD005C00EAC191 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,7 +371,7 @@
 			files = (
 				FA30B12629BD005D00EAC191 /* LaunchScreen.storyboard in Resources */,
 				FA30B12329BD005D00EAC191 /* Assets.xcassets in Resources */,
-				FA30B12129BD005C00EAC191 /* Main.storyboard in Resources */,
+				FA30B16429BD024F00EAC191 /* music.aac in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +396,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA30B11E29BD005C00EAC191 /* ViewController.swift in Sources */,
+				FA30B14D29BD010A00EAC191 /* ViewRender.swift in Sources */,
+				FA30B11E29BD005C00EAC191 /* TemplateViewController.swift in Sources */,
 				FA30B11A29BD005C00EAC191 /* AppDelegate.swift in Sources */,
-				FA30B11C29BD005C00EAC191 /* SceneDelegate.swift in Sources */,
+				FA30B17529BD033D00EAC191 /* TextureGenerator.swift in Sources */,
+				FA30B16B29BD028D00EAC191 /* ServiceSound.swift in Sources */,
+				FA30B17329BD032C00EAC191 /* Texture.swift in Sources */,
+				FA30B15A29BD020100EAC191 /* ServiceImageSegmentation.swift in Sources */,
+				FA30B17129BD032400EAC191 /* Vertex.swift in Sources */,
+				FA30B15629BD018B00EAC191 /* ServiceAssembly.swift in Sources */,
+				FA30B16829BD024F00EAC191 /* segmentation_8bit.mlpackage in Sources */,
+				FA30B15029BD011B00EAC191 /* ModelFrame.swift in Sources */,
+				FA30B17929BD035E00EAC191 /* Collection+.swift in Sources */,
+				FA30B17729BD035100EAC191 /* Image+.swift in Sources */,
+				FA30B16F29BD031400EAC191 /* MetalRenderDevice.swift in Sources */,
+				FA30B15329BD016700EAC191 /* TemplatePresenter.swift in Sources */,
+				FA30B16329BD024F00EAC191 /* ImageEffects.metal in Sources */,
+				FA30B16529BD024F00EAC191 /* ImageProcessing.metal in Sources */,
+				FA30B16729BD024F00EAC191 /* ImageBlend.metal in Sources */,
+				FA30B15829BD019F00EAC191 /* ServiceMakeVideo.swift in Sources */,
+				FA30B17C29BD03D600EAC191 /* TemplateConfigurator.swift in Sources */,
+				FA30B16629BD024F00EAC191 /* ImageScale.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +432,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA30B13D29BD005D00EAC191 /* VideoTemplateUITestsLaunchTests.swift in Sources */,
-				FA30B13B29BD005D00EAC191 /* VideoTemplateUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +451,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FA30B11F29BD005C00EAC191 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FA30B12029BD005C00EAC191 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FA30B12429BD005D00EAC191 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -439,18 +585,18 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8EJXM725TG;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = VideoTemplate/Info.plist;
+				INFOPLIST_FILE = VideoTemplate/Supporting/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.style.VideoTemplate;
+				PRODUCT_BUNDLE_IDENTIFIER = template.video;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -467,18 +613,18 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8EJXM725TG;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = VideoTemplate/Info.plist;
+				INFOPLIST_FILE = VideoTemplate/Supporting/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.style.VideoTemplate;
+				PRODUCT_BUNDLE_IDENTIFIER = template.video;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -602,6 +748,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FA30B17D29BD049100EAC191 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FA30B17E29BD049100EAC191 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA30B17D29BD049100EAC191 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FA30B10E29BD005C00EAC191 /* Project object */;
 }
