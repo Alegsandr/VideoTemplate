@@ -12,8 +12,8 @@ final class ViewRender: MTKView {
     private var dataFrame = DataFrame(type: .image, overlayStyle: OverlayStyle.none, size: vector_float2.zero)
     
     var modelFrame: ModelFrame? {
-        willSet {
-            guard let texture = newValue?.image else { return }
+        didSet {
+            guard let texture = modelFrame?.image else { return }
             drawableSize = CGSize(width: texture.image?.texture.width ?? 0, height: texture.image?.texture.height ?? 0)
             
             if let dataFrame = modelFrame?.data {

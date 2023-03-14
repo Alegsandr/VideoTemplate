@@ -210,9 +210,9 @@
 			isa = PBXGroup;
 			children = (
 				FA30B15E29BD024D00EAC191 /* ImageConnect.h */,
+				FA30B15F29BD024D00EAC191 /* ImageProcessing.metal */,
 				FA30B16129BD024E00EAC191 /* ImageBlend.metal */,
 				FA30B15C29BD024D00EAC191 /* ImageEffects.metal */,
-				FA30B15F29BD024D00EAC191 /* ImageProcessing.metal */,
 				FA30B16029BD024E00EAC191 /* ImageScale.metal */,
 				FA30B15D29BD024D00EAC191 /* music.aac */,
 				FA30B16229BD024F00EAC191 /* segmentation_8bit.mlpackage */,

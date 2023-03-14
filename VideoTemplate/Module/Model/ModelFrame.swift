@@ -14,14 +14,12 @@ enum ImageType: Int {
 
 enum OverlayStyle: Int {
     case none = 0
-    case `default` = 1
-    case rotate = 2
-    case scale = 3
+    case scale = 1
 }
 
 struct DataFrame {
     let type: ImageType
-    let overlayStyle: OverlayStyle?
+    let overlayStyle: OverlayStyle
     let size: vector_float2
 }
 

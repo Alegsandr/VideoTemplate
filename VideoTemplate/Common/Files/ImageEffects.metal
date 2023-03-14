@@ -37,19 +37,6 @@ float4 image_rotate(texture2d<float> texture, float2 coord, float angle) {
     return image_result;
 }
 
-//float4 rotate_effect(Vertex vertex_data [[stage_in]],
-//                     sampler sampler [[sampler(0)]],
-//                     texture2d<float> texture [[texture(0)]],
-//                     float rotate) {
-//
-//    float2 coord = vertex_data.texture_coord;
-//    float2 rotate_value = coord * sin(rotate);
-////    metal shader rotate texture
-//
-//    return texture.sample(sampler, rotate_value);
-//}
-
-
 float2 image_effect(float2 texture_coord, float angle, float scale) {
     float cr = cos(angle);
     float sr = sin(angle);

@@ -32,12 +32,15 @@ fragment float4 image_render(Vertex vertex_data [[stage_in]],
 
     float4 last = float4(texture_last.sample(sampler, vertex_data.texture_coord));
     float4 image = float4(texture_image.sample(sampler, vertex_data.texture_coord));
-    float4 mask = float4(texture_mask.sample(sampler, vertex_data.texture_coord));
+//    float4 mask = float4(texture_mask.sample(sampler, vertex_data.texture_coord));
     
     float4 image_result = image;
     
-    if (frame_data.type == 0) {
-        float4 image_mask = blend_filter(mask, image);
+    if (frame_data.type == 1) {
+        float4 scale_image = image_scale(texture_image, vertex_data.texture_coord, 1.1);
+        float4 scale_mask = image_scale(texture_mask, vertex_data.texture_coord, 1.1);
+        
+        float4 image_mask = blend_filter(scale_mask, scale_image);
         image_result = blend_over(image_mask, last);
     }
     

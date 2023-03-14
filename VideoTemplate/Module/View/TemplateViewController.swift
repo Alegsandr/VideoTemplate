@@ -80,7 +80,9 @@ private extension TemplateViewController {
     
     func setFrameDefault() {
         let textures = presenter.textures(from: images[1])
-        viewRender.modelFrame = ModelFrame(image: (textures.last, textures.image, textures.mask), data: dataFrame(texture: textures.image, type: textures.type))
+        let dataFrame = dataFrame(texture: textures.image, type: textures.type)
+        
+        viewRender.modelFrame = ModelFrame(image: (textures.last, textures.image, textures.mask), data: dataFrame)
         viewRender.draw()
     }
     
@@ -91,9 +93,11 @@ private extension TemplateViewController {
         
         presenter.playMusic()
                 
-        newImages.forEach { images in
-            let textures = presenter.textures(from: images)
-            viewRender.modelFrame = ModelFrame(image: (textures.last, textures.image, textures.mask), data: dataFrame(texture: textures.image, type: textures.type))
+        newImages.forEach { image in
+            let textures = presenter.textures(from: image)
+            let dataFrame = dataFrame(texture: textures.image, type: textures.type)
+            
+            viewRender.modelFrame = ModelFrame(image: (textures.last, textures.image, textures.mask), data: dataFrame)
             viewRender.draw()
             
             counter += 1
